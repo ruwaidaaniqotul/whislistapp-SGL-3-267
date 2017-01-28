@@ -1,0 +1,28 @@
+{% include 'header.html'%}
+<link rel="stylesheet"href="{{url_for('static',filename='css/font-awesome.css')}}">
+<body>
+<div class="container">
+    <table class="table table-striped ">
+      <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Action</th>
+      <thead>
+      <tbody>
+        {% for row in rows %}
+        <tr>
+        <td>{{row["id"]}}</td>
+        <td>{{row["name"]}}</td>
+        <td>{{row["price"]}}</td>
+        <td>
+        <a href="" class="fa fa-pencil" aria-hidden="true"></a>
+        <a href="{{url_for('deluser', idcar = row["id"]) }}" class="fa fa-remove" aria-hidden="true"></a>
+        </td>
+        </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <a href = "/"> Go back to home page</a>
+      </div>
+  </body>

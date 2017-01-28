@@ -1,0 +1,35 @@
+<html>
+<body>
+<form action = "{{ url_for('saveuser') }}" method = "POST">
+        <h3>INSERT USER</h3>
+        id<br>
+        <input type ="text" name = "id" /></br>
+
+        User name<br>
+        <input type ="text" name = "username" /></br>
+
+        password<br>
+          <input type ="text" name = "password" /></br>
+
+        first_name<br>
+          <input type ="text" name = "first_name" /></br>
+
+        last_name<br>
+          <input type ="text" name = "last_name" /></br>
+
+        email<br>
+          <input type ="text" name = "email" /></br>
+
+        gender<br>
+          <input type ="radio" name = "gender" value="female" />Female
+
+          <input type ="radio" name = "gender" value="male" />Male</br>
+
+
+
+
+         <input type ="submit" name = "submit" /></br>
+
+</form>
+</html>
+</body>
